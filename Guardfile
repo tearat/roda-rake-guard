@@ -23,7 +23,7 @@ guard 'bundler' do
   watch('Gemfile')
 end
 
-guard 'rack' do
+guard 'rack', :port => 8000 do
   notification :off
   watch('Gemfile.lock')
   watch(/.*\.r[b|u]/)
