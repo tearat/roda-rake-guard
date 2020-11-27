@@ -24,6 +24,7 @@ guard 'bundler' do
 end
 
 guard 'rack' do
+  notification :off
   watch('Gemfile.lock')
   watch(/.*\.r[b|u]/)
 end
